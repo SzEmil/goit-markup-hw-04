@@ -122,10 +122,6 @@ header {
   padding-bottom: 0;
 }
 .solutions {
-  background: var(--main-baner-color);
-  text-align: center;
-  width: 1600px;
-  height: 600px;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -137,6 +133,22 @@ header {
 /* ----------------------STYLOWANIE ZAWARTOŚCI STRONY MAIN------------------------ */
 
 /* -------styl głównego banerru z przyciskiem ----------------*/
+.main-baner {
+  background-color: var(--main-baner-color);
+  background-image: linear-gradient(
+      rgba(46, 196, 255, 0.2) 1%,
+      rgba(0, 0, 0, 0.7) 99%
+    ),
+    url(/images/images_main/main-banner.jpg),
+    url(/images/images_main/tło-jpg.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: scroll;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 1600px;
+  height: 600px;
+}
 .main-button {
   cursor: pointer;
   width: 200px;
@@ -144,16 +156,16 @@ header {
   background: var(--button-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  justify-content: center;
 }
 .main-button-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-
   letter-spacing: 0.06em;
   color: var(--white-color);
+  filter: none;
 }
-
 /*--------------------------- Styl glowneego paragrafu na stronie -----------------*/
 .main-advantages-text {
   font-size: 14px;
