@@ -163,7 +163,6 @@ header {
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--white-color);
-  filter: none;
 }
 /*--------------------------- Styl glowneego paragrafu na stronie -----------------*/
 .main-advantages-text {
