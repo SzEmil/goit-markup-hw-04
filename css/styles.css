@@ -8,7 +8,7 @@ body {
 }
 .container {
   width: 1200px;
-  padding-left: 215px;
+  margin: auto;
 }
 /* POTEM DODAĆ WAŻNE: MNOŻNIK LINE HEIGHT= TO line-height/font-size */
 
@@ -38,29 +38,26 @@ body {
 }
 /* styl naglowka */
 header {
-  left: 0px;
-  top: 0px;
-  width: 1600px;
   height: 80px;
-  border: 1px solid var(--header-line-bottom-color);
+  border-bottom: 1px solid var(--header-line-bottom-color);
 }
 .header-link-format {
-  width: 254px;
   padding-left: 93px;
-  padding-right: 371px;
+  padding-right: 364px;
 }
 .header-display-format {
   display: flex;
+  padding-left: 15px;
+  align-items: center;
+  height: 80px;
 }
 /* styl bazowy jako rodzic(linki z contentem, kontaktem i adresem --- przy okazji jest to priorytet (3) rzedu czyli .klasa */
 .header-social-link {
   font-weight: 500;
-  /* line-height: 1.14; */
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
-  padding-top: 32px;
 }
 /* Pseudoklasy w menu w celu zrobienia oddzielen pomiedzy opcjami */
 .header-link-mod:nth-child(n + 2) {
@@ -98,9 +95,6 @@ header {
   line-height: 1.19;
   color: var(--logo-color2);
 }
-.main-logo-format {
-  padding: 24px 0px 0px 0px;
-}
 .logo .logo-part {
   color: var(--logo-color1);
 }
@@ -122,6 +116,10 @@ header {
   padding-bottom: 0;
 }
 .solutions {
+  display: block;
+  text-align: center;
+  width: 1600px;
+  height: 600px;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -129,10 +127,30 @@ header {
   padding-top: 0;
   padding-bottom: 0;
 }
-
+/* .advantages {
+ 
+} */
 /* ----------------------STYLOWANIE ZAWARTOŚCI STRONY MAIN------------------------ */
 
 /* -------styl głównego banerru z przyciskiem ----------------*/
+.main-button {
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  background: var(--button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.main-button-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+}
+
+/*--------------------------- Styl glowneego paragrafu na stronie -----------------*/
 .main-baner {
   background-color: var(--main-baner-color);
   background-image: linear-gradient(
@@ -148,36 +166,18 @@ header {
   width: 1600px;
   height: 600px;
 }
-.main-button {
-  cursor: pointer;
-  width: 200px;
-  height: 50px;
-  background: var(--button-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  justify-content: center;
-}
-.main-button-text {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: var(--white-color);
-}
-/*--------------------------- Styl glowneego paragrafu na stronie -----------------*/
 .main-advantages-text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--paragraph-link-content);
 }
-.main-advantages-format {
-  width: 1170px;
-}
 .main-advantages-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-
+.main-advantages-list li {
+  width: 270px;
+}
 /* styl dla naglowkow h1:w glownym miejscu strony, h2: podtytuły sekcji, h3: podtytuły paragrafu */
 h1 {
   width: 696px;
@@ -197,26 +197,27 @@ h2 {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-/*------------------------- Fortmatowanie photo main dostepne usługi firmy-------------*/
-.main-content {
-  width: 1200px;
-}
+/*------------------------- Fortmatowanie contentu main dostepne usługi firmy-------------*/
+
 .main-header-second-content {
-  padding: 0px 0px 50px 400px;
+  padding-bottom: 50px;
+  text-align: center;
 }
 .main-photo-content-format {
   display: flex;
-  column-gap: 30px;
-  width: 1170px;
+  justify-content: space-around;
 }
-
+.main-content-img {
+  display: block;
+}
 /*-------------------------------- Formatowanie informacji o teamie-------------------- */
 .main-header-second-team {
-  padding: 0px 0px 50px 480px;
+  padding-bottom: 50px;
+  text-align: center;
 }
 .main-photo-team-format {
   display: flex;
-  column-gap: 30px;
+  justify-content: space-around;
 }
 .main-photo-team-background {
   width: 270px;
@@ -249,7 +250,6 @@ h2 {
 }
 h3 {
   padding-bottom: 10px;
-  padding-right: 30px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -275,7 +275,7 @@ footer {
 }
 
 .footer-logo-format {
-  padding: 60px 0px 0px 0px;
+  padding: 60px 0px 0px 15px;
 }
 .footer-logo-mod:nth-child(2) {
   padding-top: 20px;
@@ -288,9 +288,9 @@ footer {
   cursor: pointer;
   background: var(--button-bacground-portfolio);
   border-radius: 4px;
-  box-decoration-break: unset;
 
-  font-weight: 700;
+  font-family: "Roboto";
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.875;
 
@@ -311,7 +311,7 @@ footer {
   column-gap: 8px;
   padding-bottom: 50px;
 }
-/* stylizacja zdjęć w portfolio */
+/*-------- stylizacja zdjęć w portfolio-------- */
 .portfolio-photo-background {
   width: 370px;
   height: 404px;
@@ -351,6 +351,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 .link-contact-footer {
   color: var(--link-contact-footer);
