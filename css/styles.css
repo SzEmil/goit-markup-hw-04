@@ -36,6 +36,9 @@ body {
   --portofolio-photo-background: #eeeeee;
   --header-line-bottom-color: #ececec;
 }
+.icon {
+  fill: var(--links-color);
+}
 /* styl naglowka */
 header {
   height: 80px;
@@ -85,7 +88,8 @@ header {
 .header-social-link .link-contact:active {
   color: var(--links-color);
 }
-
+/* .header-link-contact-mod:nth-child(1)::before {
+} */
 /* styl dla logo webstudio */
 .logo {
   width: 145px;
@@ -149,8 +153,6 @@ header {
   letter-spacing: 0.06em;
   color: var(--white-color);
 }
-
-/*--------------------------- Styl glowneego paragrafu na stronie -----------------*/
 .main-baner {
   background-color: var(--main-baner-color);
   background-image: linear-gradient(
@@ -166,6 +168,25 @@ header {
   width: 1600px;
   height: 600px;
 }
+h1 {
+  width: 696px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: var(--white-color);
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 200px 0px 30px 237px;
+}
+/*--------------------------- Styl glowneego paragrafu na stronie -----------------*/
+.mian-advantages-photo {
+  width: 270px;
+  height: 120px;
+  background-color: var(--our-team-background);
+  padding-bottom: 30px;
+}
 .main-advantages-text {
   font-size: 14px;
   line-height: 1.71;
@@ -179,18 +200,7 @@ header {
   width: 270px;
 }
 /* styl dla naglowkow h1:w glownym miejscu strony, h2: podtytuły sekcji, h3: podtytuły paragrafu */
-h1 {
-  width: 696px;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  color: var(--white-color);
-
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 200px 0px 30px 237px;
-}
 h2 {
   font-weight: 700;
   font-size: 36px;
