@@ -181,11 +181,11 @@ h1 {
   padding: 200px 0px 30px 237px;
 }
 /*--------------------------- Styl glowneego paragrafu na stronie -----------------*/
-.mian-advantages-photo {
+.main-advantages-photo {
   width: 270px;
   height: 120px;
   background-color: var(--our-team-background);
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 .main-advantages-text {
   font-size: 14px;
@@ -198,6 +198,11 @@ h1 {
 }
 .main-advantages-list li {
   width: 270px;
+}
+.main-advantages-position {
+  display: flex;
+  width: 270px;
+  flex-direction: column;
 }
 /* styl dla naglowkow h1:w glownym miejscu strony, h2: podtytuły sekcji, h3: podtytuły paragrafu */
 
