@@ -115,9 +115,7 @@ header {
 }
 .team {
   width: 1600px;
-  height: 648px;
   background-color: var(--our-team-background);
-  padding-bottom: 0;
 }
 .solutions {
   display: block;
@@ -133,6 +131,8 @@ header {
 }
 /* .advantages {
  
+} */
+/* .clients {
 } */
 /* ----------------------STYLOWANIE ZAWARTOŚCI STRONY MAIN------------------------ */
 
@@ -181,11 +181,17 @@ h1 {
   padding: 200px 0px 30px 237px;
 }
 /*--------------------------- Styl glowneego paragrafu na stronie -----------------*/
+/* .icon {
+   padding-top: 25px; 
+} */
 .main-advantages-photo {
   width: 270px;
   height: 120px;
   background-color: var(--our-team-background);
+  border-radius: 4px;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 }
 .main-advantages-text {
   font-size: 14px;
@@ -236,12 +242,37 @@ h2 {
 }
 .main-photo-team-background {
   width: 270px;
-  height: 368px;
+  height: 428px;
   background-color: var(--white-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.main-photo-team-icons {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+.main-photo-team-icons-choose:nth-child(n + 2) {
+  padding-left: 10px;
+}
+.main-team-icon-background {
+  display: flex;
+  background-color: white;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.icon-team {
+  padding: 12px;
+  fill: #afb1b8;
+}
+.main-team-icon-background:hover {
+  background-color: #2196f3;
+}
+.icon-team:hover {
+  fill: white;
 }
 /*------------------ Styl do nagłówków fotek */
 .main-photo-title {
@@ -271,6 +302,11 @@ h3 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+/*--------------------------- STYLIZACJA SEKCJI: NASI KLIENCI------------------- */
+.main-header-second-clients {
+  padding-bottom: 50px;
+  text-align: center;
+}
 /*------------------------------- Stylizacja stopki strony -----------------------*/
 footer {
   width: 1600px;
@@ -298,7 +334,9 @@ footer {
 .footer-logo-mod:nth-child(n + 3) {
   padding-top: 9px;
 }
+/* __________________________________________________________________ */
 /*------------------------------- STYLE DO PORTFOLIO  ---------------------------*/
+/* __________________________________________________________________ */
 .button-portfolio {
   cursor: pointer;
   background: var(--button-bacground-portfolio);
