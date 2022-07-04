@@ -458,7 +458,7 @@ footer {
 /* TUTAJ TRZEBA COŚ PORRAWIĆ BY PRZYKLEIC BIALY BOX DO ZDJECIA */
 .portfolio-photo-description-mod {
   display: block;
-  width: 369px;
+  width: 370px;
   height: 110px;
   border-bottom: 1px solid var(--portofolio-photo-background);
   border-right: 1px solid var(--portofolio-photo-background);
