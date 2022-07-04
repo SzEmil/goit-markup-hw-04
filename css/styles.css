@@ -18,6 +18,11 @@ body {
   padding: 0;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
+}
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 /* zmienne globalne dla:kolorów tekstu,tła,zaznaczanie */
 :root {
@@ -303,9 +308,20 @@ h3 {
   text-transform: uppercase;
 }
 /*--------------------------- STYLIZACJA SEKCJI: NASI KLIENCI------------------- */
-.main-header-second-clients {
+.main-clients-header-second {
   padding-bottom: 50px;
   text-align: center;
+}
+.main-clients-photo-background {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.main-clients-photo {
+  display: flex;
+  justify-content: space-around;
 }
 /*------------------------------- Stylizacja stopki strony -----------------------*/
 footer {
@@ -317,6 +333,9 @@ footer {
 .header-social-link .footer-social-link {
   display: inline-block;
 }
+.footer-social-link {
+  padding-top: 60px;
+}
 .footer-social-link .link-adres {
   font-size: 14px;
   line-height: 1.71;
@@ -326,7 +345,8 @@ footer {
 }
 
 .footer-logo-format {
-  padding: 60px 0px 0px 15px;
+  display: flex;
+  padding-left: 15px;
 }
 .footer-logo-mod:nth-child(2) {
   padding-top: 20px;
@@ -334,6 +354,39 @@ footer {
 .footer-logo-mod:nth-child(n + 3) {
   padding-top: 9px;
 }
+.footer-icon-mod {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.footer-icon-format {
+  padding-top: 72px;
+  padding-left: 70px;
+}
+.footer-icon {
+  padding: 12px;
+  fill: var(--white-color);
+}
+.footer-icon-background {
+  display: flex;
+  background-color: white;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-icon-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.footer-icon-background:hover {
+  background-color: #2196f3;
+}
+
 /* __________________________________________________________________ */
 /*------------------------------- STYLE DO PORTFOLIO  ---------------------------*/
 /* __________________________________________________________________ */
