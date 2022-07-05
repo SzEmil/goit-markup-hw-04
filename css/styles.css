@@ -98,7 +98,7 @@ header {
 }
 .header-contact-mod:nth-child(1) .link-contact::before {
   content: "";
-  background-image: url("/images/icons.svg#envelop");
+  background-image: url("../images/icons.svg#envelop");
   background-size: 16px 12px;
   width: 16px;
   height: 12px;
@@ -106,12 +106,14 @@ header {
 
 .header-contact-mod:nth-child(2) .link-contact::before {
   content: "";
-  background-image: url("/images/icons.svg#mobile");
+  background-image: url("../images/icons.svg#mobile");
   background-size: 10px 16px;
   width: 10px;
   height: 16px;
 }
-
+.header-contact-mod:nth-child(n + 1) .link-contact:hover::before {
+  background-color: var(--links-color);
+}
 /* styl dla logo webstudio */
 .logo {
   width: 145px;
@@ -348,6 +350,7 @@ h3 {
 }
 .main-clients-photo-background:hover {
   border-color: #2196f3;
+  fill: #2196f3;
 }
 .main-clients-icon:hover {
   fill: #2196f3;
@@ -413,7 +416,8 @@ footer {
   color: var(--white-color);
 }
 .footer-icon-background:hover {
-  background-color: #2196f3;
+  background-color: rgba(33, 150, 243, 1);
+  
 }
 
 /* __________________________________________________________________ */
