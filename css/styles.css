@@ -93,11 +93,15 @@ header {
 .header-social-link .link-contact:active {
   color: var(--links-color);
 }
-.header-contact-mod:nth-child(1)::before {
+.link-contact {
+  display: flex;
+}
+.link-contact::before {
+  content: "";
   width: 16px;
   height: 12px;
-  content: "";
-  background-image: url(/images/icons.svg#mobile);
+
+  background-image: url("/images/icons.svg#envelop");
 }
 /* .header-link-contact-mod:nth-child(1)::before {
 } */
