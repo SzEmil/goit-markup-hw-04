@@ -96,15 +96,22 @@ header {
 .link-contact {
   display: flex;
 }
-.link-contact::before {
+.header-contact-mod:nth-child(1) .link-contact::before {
   content: "";
+  background-image: url("/images/icons.svg#envelop");
+  background-size: 16px 12px;
   width: 16px;
   height: 12px;
-
-  background-image: url("/images/icons.svg#envelop");
 }
-/* .header-link-contact-mod:nth-child(1)::before {
-} */
+
+.header-contact-mod:nth-child(2) .link-contact::before {
+  content: "";
+  background-image: url("/images/icons.svg#mobile");
+  background-size: 10px 16px;
+  width: 10px;
+  height: 16px;
+}
+
 /* styl dla logo webstudio */
 .logo {
   width: 145px;
