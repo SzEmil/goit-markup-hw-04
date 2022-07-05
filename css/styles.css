@@ -51,7 +51,7 @@ header {
 }
 .header-link-format {
   padding-left: 93px;
-  padding-right: 364px;
+  padding-right: 345px;
 }
 .header-display-format {
   display: flex;
@@ -72,7 +72,7 @@ header {
   padding-left: 46px;
 }
 .header-contact-mod:nth-child(2) {
-  padding-left: 50px;
+  padding-left: 30px;
 }
 .header-social-link .link-info {
   color: var(--basic-text-color);
@@ -96,7 +96,20 @@ header {
 .link-contact {
   display: flex;
 }
-.header-contact-mod:nth-child(1) .link-contact::before {
+.header-contact-icon1-box {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+.header-contact-icon1 {
+  display: flex;
+  width: 16px;
+  height: 12px;
+}
+.link-contact:hover {
+  fill: var(--links-color);
+}
+/* .header-contact-mod:nth-child(1) .link-contact::before {
   content: "";
   background-image: url("../images/icons.svg#envelop");
   background-size: 16px 12px;
@@ -106,14 +119,14 @@ header {
 
 .header-contact-mod:nth-child(2) .link-contact::before {
   content: "";
-  background-image: url("../images/icons.svg#mobile");
+  background-image: url("../images/mobile.svg");
   background-size: 10px 16px;
   width: 10px;
   height: 16px;
 }
 .header-contact-mod:nth-child(n + 1) .link-contact:hover::before {
   background-color: var(--links-color);
-}
+} */
 /* styl dla logo webstudio */
 .logo {
   width: 145px;
@@ -417,7 +430,6 @@ footer {
 }
 .footer-icon-background:hover {
   background-color: rgba(33, 150, 243, 1);
-  
 }
 
 /* __________________________________________________________________ */
