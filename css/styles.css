@@ -327,6 +327,7 @@ h3 {
 }
 .main-clients-icon {
   padding: 16px 32px 16px 32px;
+  fill: #afb1b8;
 }
 .main-clients-photo-background:hover {
   border-color: #2196f3;
