@@ -93,6 +93,12 @@ header {
 .header-social-link .link-contact:active {
   color: var(--links-color);
 }
+.header-contact-mod:nth-child(1)::before {
+  width: 16px;
+  height: 12px;
+  content: "";
+  background-image: url(/images/icons.svg#mobile);
+}
 /* .header-link-contact-mod:nth-child(1)::before {
 } */
 /* styl dla logo webstudio */
