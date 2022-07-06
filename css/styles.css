@@ -40,10 +40,12 @@ body {
   --link-contact-footer: rgba(255, 255, 255, 0.6);
   --portofolio-photo-background: #eeeeee;
   --header-line-bottom-color: #ececec;
+  --icon-team-color: #afb1b8;
+  --icon-clients-background-color: #2196f3;
 }
-.icon {
+/* .icon {
   fill: var(--links-color);
-}
+} */
 /* styl naglowka */
 header {
   height: 80px;
@@ -95,6 +97,7 @@ header {
 }
 .link-contact {
   display: flex;
+  fill: var(--paragraph-link-content);
 }
 .header-contact-icon1 {
   display: flex;
@@ -112,7 +115,7 @@ header {
 }
 .header-contact-icon2-box {
   display: flex;
-  width: 10px;
+  width: 16px;
   height: 16px;
   margin-right: 10px;
 }
@@ -318,7 +321,7 @@ h2 {
 }
 .icon-team {
   padding: 12px;
-  fill: #afb1b8;
+  fill: var(--icon-team-color);
 }
 .main-team-icon-background:hover,
 .main-team-icon-background:focus {
@@ -365,7 +368,7 @@ h3 {
   display: flex;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-team-color);
   border-radius: 4px;
 }
 .main-clients-photo {
@@ -374,16 +377,16 @@ h3 {
 }
 .main-clients-icon {
   padding: 16px 32px 16px 32px;
-  fill: #afb1b8;
+  fill: var(--icon-team-color);
 }
 .main-clients-photo-background:hover,
 .main-clients-photo-background:focus {
-  border-color: #2196f3;
-  fill: #2196f3;
+  border-color: var(--icon-clients-background-color);
+  fill: var(--icon-clients-background-color);
 }
 .main-clients-icon:hover,
 .main-clients-icon:focus {
-  fill: #2196f3;
+  fill: var(--icon-clients-background-color);
 }
 /*------------------------------- Stylizacja stopki strony -----------------------*/
 footer {
@@ -431,7 +434,7 @@ footer {
 }
 .footer-icon-background {
   display: flex;
-  background-color: white;
+  background-color: var(--white-color);
   width: 44px;
   height: 44px;
   border-radius: 50%;
