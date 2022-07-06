@@ -43,9 +43,7 @@ body {
   --icon-team-color: #afb1b8;
   --icon-clients-background-color: #2196f3;
 }
-/* .icon {
-  fill: var(--links-color);
-} */
+
 /* styl naglowka */
 header {
   height: 80px;
@@ -97,14 +95,15 @@ header {
 }
 .link-contact {
   display: flex;
+  align-items: center;
   fill: var(--paragraph-link-content);
 }
 .header-contact-icon1 {
   display: flex;
-  align-items: center;
 }
 .header-contact-icon1-box {
   display: flex;
+  align-items: center;
   width: 16px;
   height: 16px;
   margin-right: 10px;
@@ -125,25 +124,7 @@ header {
 .icon-contact {
   display: flex;
 }
-/* .header-contact-mod:nth-child(1) .link-contact::before {
-  content: "";
-  background-image: url("../images/icons.svg#envelop");
-  background-size: 16px 12px;
-  width: 16px;
-  height: 12px;
-}
 
-.header-contact-mod:nth-child(2) .link-contact::before {
-  content: "";
-  background-image: url("../images/mobile.svg");
-  background-size: 10px 16px;
-  width: 10px;
-  height: 16px;
-}
-.header-contact-mod:nth-child(n + 1) .link-contact:hover::before {
-  background-color: var(--links-color);
-} */
-/* styl dla logo webstudio */
 .logo {
   width: 145px;
   font-family: "Raleway";
