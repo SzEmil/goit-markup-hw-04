@@ -98,7 +98,7 @@ header {
   align-items: center;
   fill: var(--paragraph-link-content);
 }
-.header-contact-icon1 {
+.header-contact-icon {
   display: flex;
 }
 .header-contact-icon1-box {
@@ -107,10 +107,6 @@ header {
   width: 16px;
   height: 16px;
   margin-right: 10px;
-}
-.header-contact-icon2 {
-  display: flex;
-  align-items: center;
 }
 .header-contact-icon2-box {
   display: flex;
