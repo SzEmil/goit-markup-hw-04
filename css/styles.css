@@ -96,18 +96,31 @@ header {
 .link-contact {
   display: flex;
 }
-.header-contact-icon1-box {
-  display: flex;
-  align-items: center;
-  padding-right: 10px;
-}
 .header-contact-icon1 {
   display: flex;
+  align-items: center;
+}
+.header-contact-icon1-box {
+  display: flex;
   width: 16px;
-  height: 12px;
+  height: 16px;
+  margin-right: 10px;
+}
+.header-contact-icon2 {
+  display: flex;
+  align-items: center;
+}
+.header-contact-icon2-box {
+  display: flex;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
 }
 .link-contact:hover {
   fill: var(--links-color);
+}
+.icon-contact {
+  display: flex;
 }
 /* .header-contact-mod:nth-child(1) .link-contact::before {
   content: "";
