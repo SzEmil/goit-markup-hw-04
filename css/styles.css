@@ -433,7 +433,7 @@ footer {
   cursor: pointer;
   background: var(--button-bacground-portfolio);
   border-radius: 4px;
-  border: 1px solid var(--button-bacground-portfolio);
+  border: none;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
